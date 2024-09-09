@@ -23,6 +23,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone this repository or download the script files.
 
 2. Create a `.env` file in the project root and add your ScrapingBee API key:
+
    ```
    SCRAPINGBEE_API_KEY=your_api_key_here
    ```
@@ -41,6 +42,7 @@ sudo docker run -it --rm -v $(pwd):/app -v $(pwd)/images:/app/images web-image-s
 ```
 
 This command does the following:
+
 - `-it`: Runs the container interactively
 - `--rm`: Removes the container when it exits
 - `-v $(pwd):/app`: Mounts the current directory to /app in the container
@@ -82,6 +84,50 @@ exit
 
 This will return you to your host machine's shell.
 
+## Running Tests
+
+You can run the test suite using `pytest` to ensure that everything works as expected.
+
+### Installing Dependencies for Tests
+
+Make sure you have `pytest` installed. If not, you can install it via pip:
+
+```
+pip install pytest
+```
+
+### Running the Tests
+
+You can run the test cases with the following command:
+
+```
+pytest
+```
+
+This will automatically discover and run all test files (e.g., `test_extractor.py`) in your project.
+
+To run a specific test file, use:
+
+```
+pytest tests/test_extractor.py
+```
+
+### Test Coverage
+
+If you would like to check the test coverage, you can install `pytest-cov`:
+
+```
+pip install pytest-cov
+```
+
+Then run the tests with coverage reporting:
+
+```
+pytest --cov=src
+```
+
+This will show you the percentage of code covered by tests.
+
 ## How It Works
 
 1. The script uses ScrapingBee's API to fetch the HTML content of the specified URL.
@@ -98,6 +144,7 @@ This will return you to your host machine's shell.
 - `requirements.txt`: List of Python dependencies
 - `Dockerfile`: Instructions for building the Docker image
 - `.env`: Contains the ScrapingBee API key (not included in the repository)
+- `tests/`: Contains unit tests for the application
 
 ## Contributing
 

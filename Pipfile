@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pydantic-settings = "*"
+imageio = "*"
+imagecodecs = "*"
+cairosvg = "*"
+scrapingbee = "*"
+pillow = "*"
+requests = "*"
+python-dotenv = "*"
+pillow-heif = "*"
+rich = "*"
+python-magic = "*"
+python-magic-bin = "*"
+pillow-avif-plugin = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

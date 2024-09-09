@@ -1,5 +1,11 @@
+pydantic-settings
+imageio
+imagecodecs
+cairosvg
+python-magic
 scrapingbee
-Pillow
+pillow
 requests
 python-dotenv
 pillow-heif
+rich
