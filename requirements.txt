@@ -1,0 +1,5 @@
+scrapingbee
+Pillow
+requests
+python-dotenv
+pillow-heif
