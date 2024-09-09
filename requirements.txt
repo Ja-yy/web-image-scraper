@@ -2,10 +2,12 @@ pydantic-settings
 imageio
 imagecodecs
 cairosvg
-python-magic
 scrapingbee
 pillow
 requests
 python-dotenv
 pillow-heif
 rich
+python-magic
+python-magic-bin
+pillow-avif-plugin
